@@ -109,7 +109,7 @@ function addWidget() {
 
       console.log('found Local Storage' + saved);
 
-      return saved ? saved : ['1', '2', '3'];
+      return saved ? saved : ['ex: eat', 'ex: sleep', 'ex: build ui'];
    });
 
    const [newTask, setNewTask] = useState("");
@@ -123,7 +123,7 @@ function addWidget() {
    const date = new Date().toISOString().split('T')[0];
   const fileData = type === 'json'
     ? JSON.stringify(data, null, 2)
-    : data.join('------\n');
+    : data.join('\n');
 
   const blob = new Blob([fileData], { type: 'text/plain' });
   const url = URL.createObjectURL(blob);
@@ -196,11 +196,6 @@ function handleFileUpload(event) {
       const updatedTasks = tasks.filter((_, i) => i !== index);
       setTasks(updatedTasks);
    }
-
-
-   function updateLocalStorage(){}
-
-
 
    return(
       <>
