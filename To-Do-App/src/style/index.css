@@ -1,0 +1,27 @@
+@font-face {
+   font-family: CatV;
+   src: url(./CatV_6x12_9.ttf);
+}
+
+
+:root {
+  background: #98754d;
+}
+
+#inputButton {
+  font-size: 3vw;
+  font-family: CatV;
+  width: 15%;
+  margin: 2vw;
+  height: 7vw;
+  vertical-align: top;
+}
+
+/* CSS HEX */
+/* 
+--black-olive: #353531ff;
+--flame: #ec4e20ff;
+--princeton-orange: #ff9505ff;
+--azul: #016fb9ff;
+--black: #000000ff; 
+*/
